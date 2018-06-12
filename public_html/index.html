@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Import materialize.css-->
+        <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>
+
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>CONHEÇA O AUTISMO</title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- Carga do arquivo de manifesto -->
+        <link rel="manifest" href="/Manifest.json">
+
+        <link href="IndexCSS.css" rel="stylesheet">
+     
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    
+    <body>  
+        
+        <div id="Imagem">
+            <img src = "Imagens/Autismo.png" width="100%" height="100%">
+        </div>
+        <div id="Intro">
+            <h2> Definição: </h2>
+            <p>Autismo é um transtorno de desenvolvimento grave, que prejudica a capacidade de um indivíduo em se comunicar e interagir com outras pessoas.</p>
+        </div>
+        <div id="Corpo">
+            <h2>Conceitos:</h2>
+            <p>O espectro do autismo refere-se a uma série de condições caracterizadas por desafios do indivíduo autista com habilidades e interações sociais, comportamentos repetitivos, desenvolvimento da fala e comunicação não-verbal. Trata-se de uma condição geral para um grupo de desordens no desenvolvimento cerebral.</p>
+            <p>O Manual Diagnóstico e Estatístico de Transtornos Mentais (DSM-V) agrupou o autismo, o transtorno desintegrativo da infância, o transtorno generalizado do desenvolvimento não-especificado (PDD-NOS) e a Síndrome de Asperger, como quadros integrantes de um único diagnóstico chamado Transtorno do Espectro Autista  (TEA). O espectro agrupa desde um quadro mais leve, ou alta funcionalidade, com inteligência acima da média, a casos em que há deficiência intelectual, a baixa funcionalidade.</p>
+            <p>Alguns estudiosos contestam o novo agrupamento feito pelo DSM-V. Alguns afirmam que os parâmetros atuais são vagos e por vezes, confusos. Em um mesmo grupo temos autistas gravemente incapacitados, que não conseguem falar, e também temos um Albert Einstein e um Bill Gates.</p>
+            
+        </div>
+        <div id="Base">
+            <div class="col s12">
+                <!--<a href="Comportamento.html" class="waves-effect btn novaCor" >Comportamento</a><br>
+                <a href="Comunicacao.html" class="waves-effect btn novaCor">Comunicação</a><br>
+                <a href="Frases.html" class="waves-effect btn novaCor">Frases</a><br>-->
+                <a href="Comportamento.html" class="waves-effect btn novaCor" >Comportamento</a>
+                <a href="Comunicacao.html" class="waves-effect btn novaCor">Comunicação</a>
+                <a href="Frases.html" class="waves-effect btn novaCor">Frases</a>
+            </div>
+        </div>
+         <!--JavaScript at end of body for optimized loading-->
+         <script type="text/javascript" src="js/materialize.min.js">            
+         </script>
+         
+         <!-- Carga do ServiceWorker -->
+         <script type="text/javascript">
+            if ('serviceWorker' in navigator) {
+                window.addEventListener('load', function() {
+                    navigator.serviceWorker.register('/SW.js').then(function(registration) {
+                        // Registration was successful
+                        console.log('ServiceWorker registrado com sucesso no escopo: ', registration.scope);
+                    }).catch(function(err) {
+                    // registration failed :(
+                        console.log('Falha no registro do ServiceWorker: ', err);
+                    });
+                });
+            }
+            </script>
+    </body>   
+</html>

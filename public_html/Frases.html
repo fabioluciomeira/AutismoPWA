@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>
+        <link href="FrasesCSS.css" rel="stylesheet">
+        <title>Frases com PECS</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div id="Imagem">
+            <img src = "Imagens/Frases.png" width="100%" height="100%">
+        </div>
+        <div id="Intro">
+            <p>O propósito dessa ferramenta é bem simples. A ideia é que você elabore uma frase curta,em português, e a ferramenta converterá para uma frase em PECS, de forma que a criança possa compreender!!!</p>
+        </div>
+        <div id="Corpo">
+            <p>Pressione o botão referente à palavra que você quer adicionar na frase. Você pode escolher até três palavras. Pressione FALAR para escrever a frase em PECS. Pressione LIMPAR para apagar a frase.</p>
+                   <!--JavaScript at end of body for optimized loading-->
+            <fieldset>
+                <legend>Selecione as palavras:</legend>
+                <div class ="col s12">
+                    <input type ="button" value ="Eu quero" onclick = "buttonCharge(0)" class="waves-effect btn novaCor"/>
+                    <input type ="button" value = "Brincar" onclick = "buttonCharge(1)" class="waves-effect btn novaCor"/>
+                    <input type="button" value = "Comer" onclick = "buttonCharge(2)" class="waves-effect btn novaCor"/>
+                    <input type="button" value = "Dormir" onclick = "buttonCharge(3)" class="waves-effect btn novaCor"/>
+                    <input type="button" value = "Tomar Banho" onclick = "buttonCharge(4)" class="waves-effect btn novaCor"/>
+                    <input type="button" value = "no Parque" onclick = "buttonCharge(5)" class="waves-effect btn novaCor"/>
+                    <input type="button" value = "com Brinquedo" onclick = "buttonCharge(6)" class="waves-effect btn novaCor"/>
+                    <input type="button" value = "Casa" onclick = "buttonCharge(7)" class="waves-effect btn novaCor"/>
+                    <input type="button" value = "Você" onclick = "buttonCharge(8)" class="waves-effect btn novaCor"/>
+                    <input type="button" value = "Nós" onclick = "buttonCharge(9)" class="waves-effect btn novaCor"/>
+                    <input type="button" value = "Hora" onclick = "buttonCharge(10)" class="waves-effect btn novaCor"/>
+                    <input type="button" value = "FALAR" onclick = "buttonWrite()" class="waves-effect btn novaCor"/>
+                    <input type="button" value = "LIMPAR" onclick = "buttonClear()" class="waves-effect btn novaCor"/>
+                </div>               
+            </fieldset>
+        </div>
+        <div id="Frase"> <!--Área HTML5 usada dinamicamente em tempo de execução para a criação das imagens-->
+        </div>
+        <script type="text/javascript" src="FrasesJS.js"></script>
+         
+    </body>
+</html>
